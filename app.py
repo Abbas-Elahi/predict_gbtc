@@ -177,3 +177,7 @@ if st.button("📡 Fetch Prices And Predict", use_container_width=True):
 
     else:
         st.error("No data received.")
+
+from streamlit_autorefresh import st_autorefresh
+
+st_autorefresh(interval=60 * 1000, key="auto_refresh")
